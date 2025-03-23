@@ -11,7 +11,7 @@ export const ShoppingCart = ({
 }) => {
   if (!itemName || quantity === 0) {
     return (
-      <div className="flex flex-col bg-white w-96">
+      <div className="flex flex-col bg-white w-96 ">
         <h6 className="font-redhattext font-extrabold text-2xl mb-5 text-[#C13C18] p-5">
           Your Cart
         </h6>
@@ -19,7 +19,9 @@ export const ShoppingCart = ({
           src="assets\images\illustration-empty-cart.svg"
           className="w-60 h-60 rounded-md mx-auto"
         />
-        <p className="text-gray-500 ">Your added items will appear here</p>
+        <p className="text-gray-500 flex justify-center">
+          Your added items will appear here
+        </p>
       </div>
     );
   }
